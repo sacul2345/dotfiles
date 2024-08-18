@@ -1,0 +1,55 @@
+[font]
+size = 12.0
+
+[font.bold]
+family = "Source Code Pro"
+style = "Bold"
+
+[font.bold_italic]
+family = "Source Code Pro"
+style = "Bold Italic"
+
+[font.italic]
+family = "Source Code Pro"
+style = "Italic"
+
+[font.normal]
+family = "Source Code Pro"
+style = "Regular"
+
+[window]
+opacity = 0.95
+blur = true
+
+[colors]
+# Default colors
+[colors.primary]
+background = "0x191a1c"
+foreground = "0xf0a674"
+
+# Normal colors
+[colors.normal]
+black = "0x282a2e"
+red = "0xa54242"
+green = "0x8c9440"
+yellow = "0xde935f"
+blue = "0x5f819d"
+magenta = "0x85678f"
+cyan = "0x5e8d87"
+white = "0x707880"
+
+# Bright colors
+[colors.bright]
+black = "0xc5c8c6"
+red = "0xcc6666"
+green = "0xb5bd68"
+yellow = "0xf0c674"
+blue = "0x81a2be"
+magenta = "0xb294bb"
+cyan = "0x8abeb7"
+white = "0xc5c8c6"
+
+[shell]
+program = "/usr/bin/zsh"
+
+
