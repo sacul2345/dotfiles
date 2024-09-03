@@ -5,7 +5,6 @@ set mouse=v
 set hlsearch
 set incsearch
 set tabstop=4
-set softtabstop=4
 set expandtab
 set shiftwidth=4
 set autoindent
@@ -19,8 +18,9 @@ filetype plugin on
 set spell
 set noswapfile
 set clipboard+=unnamedplus
+set signcolumn=no
 
-nmap <F2> :NERDTreeToggle<CR>
+nmap <F1> :NERDTreeToggle<CR>
 
 call plug#begin()
 
@@ -35,10 +35,20 @@ call plug#begin()
     Plug 'xero/miasma.nvim'
     Plug 'ramojus/mellifluous.nvim'
     Plug 'jacoborus/tender.vim'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
 colorscheme cosmonaut  
+
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
+highlight LspDiagnosticsDefaultError cterm=underline gui=underline
+highlight LspDiagnosticsDefaultWarning cterm=underline gui=underline
+highlight LspDiagnosticsDefaultInformation cterm=underline gui=underline
+highlight LspDiagnosticsDefaultHint cterm=underline gui=underline
 
 "lua << EOF"
 "require("nvim-autopairs").setup {}

@@ -18,7 +18,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-alias neofetch='neofetch --ascii_colors 215 215' 
+alias neofetch='neofetch --ascii_colors 216 216' 
 alias pipes='sh /home/lucas/Downloads/pipes/pipes.sh-master/pipes.sh'
 alias weather='curl wttr.in/stl'
 alias vim='nvim'

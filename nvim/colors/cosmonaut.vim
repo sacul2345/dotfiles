@@ -7,6 +7,13 @@ endif
 set t_Co=256
 let g:colors_name = "cosmonaut"
 
+"spel error underline
+"highlight SpellBad cterm=underline gui=underline
+highlight DiagnosticError cterm=underline gui=underline
+highlight DiagnosticWarn cterm=underline gui=underline
+highlight DiagnosticInfo cterm=underline gui=underline
+highlight DiagnosticHint cterm=underline gui=underline
+
 
 " Define reusable colorvariables.
 let s:bg="#191a1c"

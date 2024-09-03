@@ -5,7 +5,7 @@
  *******************************************************************************/
 
 * {
-    font:   "FiraCode Nerd Font Medium 12";
+    font:   "SF Mono 12";
 
     bg0:     #191a1c;
     bg1:     #282A2E;
@@ -51,14 +51,14 @@ textbox {
 
 listview {
     padding:    4px 0;
-    lines:      8;
+    lines:      5;
     columns:    1;
 
     fixed-height:   false;
 }
 
 element {
-    padding:    8px;
+    padding:    6px;
     spacing:    8px;
 }
 
