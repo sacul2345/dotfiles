@@ -1,4 +1,4 @@
 # dotfiles
-MY DOT FILES FOR LINUX!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+linus.
 
 not updated very often...
